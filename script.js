@@ -65,7 +65,7 @@ function outDate() {
 						lessCredits + " Minus total pre-sentence credits<br>" + 
 						remainingSentence + " Total days remaining</div>"
 	
-						+ "<br><div><strong>(Time Left:  " + remaingYears + " years, " + remainingMonths + " months, " + remainingDays + " days.)</strong></div>";
+						+ "<br><div><span>(Time Left:  " + remaingYears + " years, " + remainingMonths + " months, " + remainingDays + " days.)</span></div>";
 	
 	document.getElementById("allTogether").innerHTML = allTogether;
 

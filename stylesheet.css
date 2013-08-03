@@ -1,5 +1,15 @@
 body {
-    width: 320px;
-    font-family: sans-serif;
+    width: 300px;
+    font-family: Chaparral, sans-serif;
     font-size: 0.9em;
+    color: gray;
+}
+
+h3 {
+    color: black;
+}
+
+span {
+    color: black;
+    font-weight: bold;
 }
