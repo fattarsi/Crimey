@@ -1,48 +1,32 @@
 <!DOCTYPE html>
 <html manifest="crimey.manifest">
-	<head>
-		<title>Crimey - CA Credit For Time Served Calculator</title>
-		<script type="text/javascript" src ="script.js"></script>
-        <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
-        
-	</head>
-	
-	<body>
-		<form name="timeServed">
-	
-		<h3>Pre-Sentence Credits</h3>
-			
-			<lable for="actualCredits">Days in Custody:</lable>
-			<input type="number" id="actualCredits"/><br>
-			
-		<h3>Type of Charge</h3>
-			
-			<input type="radio" name="choice1" value="felony" checked>Felony<br>
-			<input type="radio" name="choice1" value="seriousFelony">Serious Felony<br>
-			<input type="radio" name="choice1" value="violentFelony">Violent Felony<br><br>
-			
-			<input type="radio" name="choice2" value="noStrike" checked>No Strikes<br>
-			<input type="radio" name="choice2" value="admitStrike">Prior Strike<br>
-			
-		<h3>Sentence</h3>
-
-			<lable for="sentenceYears">Years:</lable>
-			<input type="number" id="sentenceYears"/><br>
-			<lable for="sentenceMonths">Months:</lable>
-			<input type="number" id="sentenceMonths"/><br>
-			<lable for="sentenceDays">Days:</lable>
-			<input type="number" id="sentenceDays"/>
-			<br><br>
-            
-			<input type="button" value="Calculate" onClick="outDate()">
-					
-		</form><br>
-		
-		<div id="allTogether"></div>
-	
-	
-	
-	</body>
-
-
+  <head>
+    <meta charset="UTF-8">
+    <title>Crimey - CA Credit For Time Served Calculator</title>
+    <script type="text/javascript" src ="script.js"></script>
+    <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+  </head>
+  <body>
+    <form name="timeServed">
+    <h3>Pre-Sentence Credits</h3>
+      <label for="actualCredits">Days in Custody:</label>
+      <input type="number" id="actualCredits"/><br>
+    <h3>Type of Charge</h3>
+      <input type="radio" name="choice1" value="felony" checked>Felony<br>
+      <input type="radio" name="choice1" value="seriousFelony">Serious Felony<br>
+      <input type="radio" name="choice1" value="violentFelony">Violent Felony<br><br>
+      <input type="radio" name="choice2" value="noStrike" checked>No Strikes<br>
+      <input type="radio" name="choice2" value="admitStrike">Prior Strike<br>
+    <h3>Sentence</h3>
+      <label for="sentenceYears">Years:</label>
+      <input type="number" id="sentenceYears"/><br>
+      <label for="sentenceMonths">Months:</label>
+      <input type="number" id="sentenceMonths"/><br>
+      <label for="sentenceDays">Days:</label>
+      <input type="number" id="sentenceDays"/>
+      <br><br>
+      <input type="button" value="Calculate" onClick="outDate()">
+    </form><br>
+    <div id="allTogether"></div>
+  </body>
 </html>
