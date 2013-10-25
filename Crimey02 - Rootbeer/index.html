@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Crimey - CA Out Date Calculator</title>
+        <script type="text/javascript" src ="script.js"></script>
+        <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+    </head>
+    <body>
+        
+        <form name="outDate">
+            
+            <h3>Pre-Sentence Credits</h3>
+            
+            <label for="actualCredits">Actual Credits</label>
+            <input type="number" onkeyup="calculate()" onchange="calculate()" id="actualCredits"/><br>
+            
+            <h3>Type of Charge</h3>
+            
+            <input type="radio" onkeyup="calculate()" onchange="calculate()" name="rsv" value="regular" checked>Felony<br>
+            <input type="radio" onkeyup="calculate()" onchange="calculate()" name="rsv" value="serious">Serious<br>
+            <input type="radio" onkeyup="calculate()" onchange="calculate()" name="rsv" value="violent">Violent<br><br>
+            
+            <input type="radio" onkeyup="calculate()" onchange="calculate()" name="strike" value="nStrike" checked>No Strike<br>
+            <input type="radio" onkeyup="calculate()" onchange="calculate()" name="strike" value="yStrike">Admit Strike<br>
+            
+            <h3>Sentence</h3>
+            
+            <label for="sentenceYears">Years</label>
+            <input type="number" onkeyup="calculate()" onchange="calculate()" name="sentenceYears"/><br>
+            <label for="sentenceMonths">Months</label>
+            <input type="number" onkeyup="calculate()" onchange="calculate()" name="sentenceMonths"/><br>
+            <label for="sentenceDays">Days</label>
+            <input type="number" onkeyup="calculate()" onchange="calculate()" name="sentenceDays"/>
+            
+        </form><br>
+
+        <div id="calculate"></div>
+
+    
+    </body>
+</html>
